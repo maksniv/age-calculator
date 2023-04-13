@@ -1,0 +1,45 @@
+@import 'src/styles/variables';
+
+.resultBlock__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.resultBlock__numbers {
+  margin-right: 20px;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 70px;
+  color: $purple;
+}
+
+.resultBlock__text {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 70px;
+}
+
+@media (max-width: 576px) {
+  //iphone
+  .resultBlock__text {
+    font-size: 50px;
+  }
+  .resultBlock__numbers {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  //ipad mini
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  //ipad pro
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  //computer
+}
+
+@media (min-width: 1401px) {
+}

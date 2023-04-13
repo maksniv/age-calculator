@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+@import-normalize;
+@import '../node_modules/normalize.css/normalize.css';
+@import 'src/styles/variables';
+
+body {
+  background-color: $offWhite;
+  color: $offBlack;
+  font-family: 'Poppins', sans-serif;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100wh;
+}

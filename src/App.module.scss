@@ -1,0 +1,111 @@
+@import 'src/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $white;
+  border-radius: 5% 5% 30% 5%;
+}
+
+.container__form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 35px;
+  align-items: center;
+
+  position: relative;
+
+  border-bottom: 1.5px solid $lightGrey;
+
+  width: 90%;
+  height: 35%;
+}
+
+.container__button {
+  background-color: $purple;
+  border-radius: 50%;
+  border: none;
+  color: $white;
+  background-image: url('/images/arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 80px;
+  width: 80px;
+
+  position: absolute;
+  bottom: -40px;
+  right: 0px;
+
+  transition: all 0.2s ease-in;
+  &:hover {
+    transform: scale(1.03);
+  }
+  &:disabled {
+    background-color: $purpleDisable;
+  }
+}
+
+.result {
+  width: 90%;
+  height: 65%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 576px) {
+  //iphone
+  .container {
+    width: 90%;
+    height: 50%;
+  }
+  .container__button {
+    position: absolute;
+    bottom: -30px;
+    right: calc(50% - 27.5px);
+    height: 55px;
+    width: 55px;
+    font-size: 10px;
+  }
+  .container__form {
+    justify-content: space-evenly;;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  //ipad mini
+  .container {
+    width: 700px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  //ipad pro
+  .container {
+    width: 700px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  //computer
+  .container {
+    width: 700px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1401px) {
+  .container {
+    width: 700px;
+    height: 500px;
+  }
+}
