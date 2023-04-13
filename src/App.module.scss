@@ -1,6 +1,8 @@
 @import 'src/styles/variables';
 
 .container {
+  width: 700px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,37 +77,6 @@
     font-size: 10px;
   }
   .container__form {
-    justify-content: space-evenly;;
-  }
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-  //ipad mini
-  .container {
-    width: 700px;
-    height: 500px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  //ipad pro
-  .container {
-    width: 700px;
-    height: 500px;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1400px) {
-  //computer
-  .container {
-    width: 700px;
-    height: 500px;
-  }
-}
-
-@media (min-width: 1401px) {
-  .container {
-    width: 700px;
-    height: 500px;
+    justify-content: space-evenly;
   }
 }

@@ -47,19 +47,10 @@
   .input__label {
     font-size: 10px;
   }
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-  //ipad mini
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  //ipad pro
-}
-
-@media (min-width: 1025px) and (max-width: 1400px) {
-  //computer
-}
-
-@media (min-width: 1401px) {
+  .input__errors {
+    font-size: 9px;
+    position: absolute;
+    color: $lightRed;
+    bottom: -35px;
+  }
 }
